@@ -12,11 +12,21 @@
 </head>
 <body>
 $END$
-<form action="/WebServlet" method="POST">
+<form action="/WebServlet" method="POST" enctype ="multipart/form-data">
     <input type="checkbox" name="week" value="选择1"/>选择1
     <input type="checkbox" name="week" value="选择2"/>选择2
     <input type="checkbox" name="week" value="选择3"/>选择3
+    <hr/>
+    <input type="file" name="file"/><br/>
+    <input type="file" name="photo" onchange="showPhoto(this)"/><img id="photo"/>
     <input type="submit"/>
+
+    <script type="text/javascript">
+        //即时显示照片
+        function showPhoto(obj){
+
+        }
+    </script>
 </form>
 </body>
 </html>
